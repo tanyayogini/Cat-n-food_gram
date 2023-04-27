@@ -767,3 +767,18 @@ AttributeError: 'NoneType' object has no attribute 'lower'
 2022-11-28 20:37:06,806 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:06] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
 2022-11-28 20:37:06,815 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:06] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
 2022-11-28 20:37:06,834 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:06] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2023-04-27 22:41:54,765 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:25000
+ * Running on http://192.168.0.104:25000
+2023-04-27 22:41:54,768 [INFO] [33mPress CTRL+C to quit[0m
+2023-04-27 22:46:06,527 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:25000
+ * Running on http://192.168.0.104:25000
+2023-04-27 22:46:06,529 [INFO] [33mPress CTRL+C to quit[0m
+2023-04-27 22:46:14,975 [INFO] 127.0.0.1 - - [27/Apr/2023 22:46:14] "GET / HTTP/1.1" 200 -
+2023-04-27 22:46:15,538 [INFO] 127.0.0.1 - - [27/Apr/2023 22:46:15] "GET /static/css/styles.min.css HTTP/1.1" 200 -
+2023-04-27 22:46:15,618 [INFO] 127.0.0.1 - - [27/Apr/2023 22:46:15] "GET /static/img/eye.png HTTP/1.1" 200 -
+2023-04-27 22:46:15,619 [INFO] 127.0.0.1 - - [27/Apr/2023 22:46:15] "GET /static/img/bookmark.png HTTP/1.1" 200 -
+2023-04-27 22:46:17,571 [INFO] 127.0.0.1 - - [27/Apr/2023 22:46:17] "GET /favicon.ico HTTP/1.1" 200 -

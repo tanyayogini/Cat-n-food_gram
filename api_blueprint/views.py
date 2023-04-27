@@ -3,7 +3,7 @@ import logging
 from utils import get_posts_all, get_post_by_pk
 
 # Подключаем логирование в нужном формате
-logging.basicConfig(filename="logs/api.log", format="%(asctime)s [%(levelname)s] %(message)s")
+#logging.basicConfig(filename="logs/api.log", format="%(asctime)s [%(levelname)s] %(message)s")
 
 # блюпринт для API
 api_posts = Blueprint("api_posts", __name__)
