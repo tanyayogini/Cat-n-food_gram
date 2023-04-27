@@ -1,0 +1,10 @@
+[Unit]
+Description=Flask App Service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/tkushnareva/Cat-n-food_gram
+ExecStart=/home/tkushnareva/Cat-n-food_gram/bin/python run.py
+
+[Install]
+WantedBy=multi-user.target
