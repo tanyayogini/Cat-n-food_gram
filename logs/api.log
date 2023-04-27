@@ -1,0 +1,769 @@
+2022-11-28 19:20:42,993 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 19:20:42,994 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 19:20:51,175 [INFO] 127.0.0.1 - - [28/Nov/2022 19:20:51] "[33mGET /api/posts/ HTTP/1.1[0m" 404 -
+2022-11-28 19:21:13,634 [INFO] 127.0.0.1 - - [28/Nov/2022 19:21:13] "GET /api/posts HTTP/1.1" 200 -
+2022-11-28 19:22:49,893 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 19:22:49,893 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 19:22:50,507 [INFO] 127.0.0.1 - - [28/Nov/2022 19:22:50] "[32mGET /api/posts HTTP/1.1[0m" 308 -
+2022-11-28 19:22:50,599 [INFO] 127.0.0.1 - - [28/Nov/2022 19:22:50] "GET /api/posts/ HTTP/1.1" 200 -
+2022-11-28 19:22:57,020 [INFO] 127.0.0.1 - - [28/Nov/2022 19:22:57] "[32mGET /api/posts/3 HTTP/1.1[0m" 308 -
+2022-11-28 19:22:57,063 [INFO] 127.0.0.1 - - [28/Nov/2022 19:22:57] "GET /api/posts/3/ HTTP/1.1" 200 -
+2022-11-28 19:22:59,255 [INFO] 127.0.0.1 - - [28/Nov/2022 19:22:59] "GET /api/posts/3/ HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [28/Nov/2022 19:24:51] "GET /api/posts/3/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Nov/2022 19:24:55] "[32mGET /api/posts/1 HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [28/Nov/2022 19:24:55] "GET /api/posts/1/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Nov/2022 19:24:59] "GET /api/posts/ HTTP/1.1" 200 -
+2022-11-28 19:37:48,570 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 19:37:48,575 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 19:37:51,439 [INFO] 127.0.0.1 - - [28/Nov/2022 19:37:51] "GET / HTTP/1.1" 200 -
+2022-11-28 19:37:52,175 [INFO] 127.0.0.1 - - [28/Nov/2022 19:37:52] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:37:52,179 [INFO] 127.0.0.1 - - [28/Nov/2022 19:37:52] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:37:52,185 [INFO] 127.0.0.1 - - [28/Nov/2022 19:37:52] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:38:00,022 [ERROR] Exception on /me [GET]
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1785, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1767, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1666, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1606, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\run.py", line 100, in handle_exception
+    return response.code
+AttributeError: 'Response' object has no attribute 'code'
+2022-11-28 19:38:00,043 [INFO] 127.0.0.1 - - [28/Nov/2022 19:38:00] "[35m[1mGET /me HTTP/1.1[0m" 500 -
+2022-11-28 19:38:00,348 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1785, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1767, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1666, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1606, in handle_http_exception
+    return self.ensure_sync(handler)(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\run.py", line 100, in handle_exception
+    return response.code
+AttributeError: 'Response' object has no attribute 'code'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1724, in handle_exception
+    server_error = self.ensure_sync(handler)(server_error)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\run.py", line 100, in handle_exception
+    return response.code
+AttributeError: 'Response' object has no attribute 'code'
+2022-11-28 19:39:33,156 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 19:39:33,157 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 19:39:37,256 [ERROR] Exception on /me [GET]
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2170, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a int.
+2022-11-28 19:39:37,263 [INFO] 127.0.0.1 - - [28/Nov/2022 19:39:37] "[35m[1mGET /me HTTP/1.1[0m" 500 -
+2022-11-28 19:39:37,345 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2170, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a int.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1726, in handle_exception
+    return self.finalize_request(server_error, from_error_handler=True)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2170, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a int.
+2022-11-28 19:39:42,793 [ERROR] Exception on /mefgh [GET]
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2170, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a int.
+2022-11-28 19:39:42,797 [INFO] 127.0.0.1 - - [28/Nov/2022 19:39:42] "[35m[1mGET /mefgh HTTP/1.1[0m" 500 -
+2022-11-28 19:39:42,799 [ERROR] Error on request:
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2170, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a int.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1726, in handle_exception
+    return self.finalize_request(server_error, from_error_handler=True)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2170, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a int.
+2022-11-28 19:41:54,426 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 19:41:54,434 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 19:41:56,900 [INFO] 127.0.0.1 - - [28/Nov/2022 19:41:56] "GET /mefgh HTTP/1.1" 200 -
+2022-11-28 19:41:59,722 [INFO] 127.0.0.1 - - [28/Nov/2022 19:41:59] "GET /mefgh HTTP/1.1" 200 -
+2022-11-28 19:42:39,469 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 19:42:39,471 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 19:42:52,105 [INFO] 127.0.0.1 - - [28/Nov/2022 19:42:52] "GET / HTTP/1.1" 200 -
+2022-11-28 19:42:53,976 [INFO] 127.0.0.1 - - [28/Nov/2022 19:42:53] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:42:53,991 [INFO] 127.0.0.1 - - [28/Nov/2022 19:42:53] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:42:54,142 [INFO] 127.0.0.1 - - [28/Nov/2022 19:42:54] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:42:59,492 [INFO] 127.0.0.1 - - [28/Nov/2022 19:42:59] "GET /qwe HTTP/1.1" 200 -
+2022-11-28 19:43:55,952 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 19:43:55,954 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 19:43:56,101 [INFO] 127.0.0.1 - - [28/Nov/2022 19:43:56] "GET / HTTP/1.1" 200 -
+2022-11-28 19:43:56,344 [INFO] 127.0.0.1 - - [28/Nov/2022 19:43:56] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:43:56,877 [INFO] 127.0.0.1 - - [28/Nov/2022 19:43:56] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:43:56,960 [INFO] 127.0.0.1 - - [28/Nov/2022 19:43:56] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:44:04,289 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:04] "GET /users/leo HTTP/1.1" 200 -
+2022-11-28 19:44:04,396 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:04] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:44:04,449 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:04] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:44:04,566 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:04] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:44:11,350 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:11] "GET /posts/5/ HTTP/1.1" 200 -
+2022-11-28 19:44:11,425 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:11] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:44:11,451 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:11] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:44:11,473 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:11] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:44:13,347 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:13] "GET / HTTP/1.1" 200 -
+2022-11-28 19:44:13,414 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:13] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:44:13,425 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:13] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:44:13,446 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:13] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:44:22,036 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:22] "GET /users/leo HTTP/1.1" 200 -
+2022-11-28 19:44:22,099 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:22] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:44:22,111 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:22] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:44:22,133 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:22] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:44:24,642 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:24] "[32mGET /posts/1 HTTP/1.1[0m" 308 -
+2022-11-28 19:44:24,681 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:24] "GET /posts/1/ HTTP/1.1" 200 -
+2022-11-28 19:44:24,783 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:24] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:44:24,859 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:24] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:44:24,875 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:24] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:44:28,176 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:28] "GET /templates/user-feed.html HTTP/1.1" 200 -
+2022-11-28 19:44:33,556 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:33] "GET /templates/user-feed.html HTTP/1.1" 200 -
+2022-11-28 19:44:37,457 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:37] "GET /templates/user-feed.html HTTP/1.1" 200 -
+2022-11-28 19:44:42,722 [INFO] 127.0.0.1 - - [28/Nov/2022 19:44:42] "GET /templates/user-feed.html HTTP/1.1" 200 -
+2022-11-28 19:45:06,179 [INFO] 127.0.0.1 - - [28/Nov/2022 19:45:06] "GET / HTTP/1.1" 200 -
+2022-11-28 19:45:06,246 [INFO] 127.0.0.1 - - [28/Nov/2022 19:45:06] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:45:06,271 [INFO] 127.0.0.1 - - [28/Nov/2022 19:45:06] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:45:06,310 [INFO] 127.0.0.1 - - [28/Nov/2022 19:45:06] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:45:09,164 [INFO] 127.0.0.1 - - [28/Nov/2022 19:45:09] "GET /users/leo HTTP/1.1" 200 -
+2022-11-28 19:45:09,229 [INFO] 127.0.0.1 - - [28/Nov/2022 19:45:09] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:45:09,261 [INFO] 127.0.0.1 - - [28/Nov/2022 19:45:09] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:45:09,274 [INFO] 127.0.0.1 - - [28/Nov/2022 19:45:09] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:50:00,247 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 19:50:00,250 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 19:50:00,537 [INFO] 127.0.0.1 - - [28/Nov/2022 19:50:00] "GET / HTTP/1.1" 200 -
+2022-11-28 19:50:04,740 [INFO] 127.0.0.1 - - [28/Nov/2022 19:50:04] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:50:04,746 [INFO] 127.0.0.1 - - [28/Nov/2022 19:50:04] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:50:04,748 [INFO] 127.0.0.1 - - [28/Nov/2022 19:50:04] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:50:15,367 [ERROR] Exception on /posts/1/ [GET]
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\run.py", line 33, in single_post_page
+    return render_template("post.html", **post, comments=comments, number_comments=number_comments)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\templates\post.html", line 31, in top-level template code
+    <a href="/users/{{ post['poster_name'] }}" class="item__head">
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\jinja2\environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2022-11-28 19:50:15,389 [INFO] 127.0.0.1 - - [28/Nov/2022 19:50:15] "GET /posts/1/ HTTP/1.1" 200 -
+2022-11-28 19:51:08,319 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 19:51:08,320 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 19:51:08,386 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:08] "GET /posts/1/ HTTP/1.1" 200 -
+2022-11-28 19:51:08,903 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:08] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:51:09,002 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:09] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:51:09,052 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:09] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:51:11,830 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:11] "GET /users/leo HTTP/1.1" 200 -
+2022-11-28 19:51:11,884 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:11] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:51:11,906 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:11] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:51:11,923 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:11] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:51:15,507 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:15] "GET / HTTP/1.1" 200 -
+2022-11-28 19:51:15,598 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:15] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:51:15,618 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:15] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:51:15,621 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:15] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:51:18,877 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:18] "GET /search?s=gh HTTP/1.1" 200 -
+2022-11-28 19:51:18,991 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:18] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:51:21,142 [ERROR] Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\run.py", line 43, in search_page
+    posts_by_query = add_tags_to_list_posts(search_for_posts(query))
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\utils.py", line 61, in search_for_posts
+    if query.lower() in post["content"].lower():
+AttributeError: 'NoneType' object has no attribute 'lower'
+2022-11-28 19:51:21,149 [INFO] 127.0.0.1 - - [28/Nov/2022 19:51:21] "GET /search HTTP/1.1" 200 -
+2022-11-28 19:52:38,516 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 19:52:38,516 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 19:52:38,637 [ERROR] Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\run.py", line 43, in search_page
+    posts_by_query = add_tags_to_list_posts(search_for_posts(query))
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\utils.py", line 61, in search_for_posts
+    if query.lower() in post["content"].lower():
+AttributeError: 'NoneType' object has no attribute 'lower'
+2022-11-28 19:52:38,643 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:38] "GET /search HTTP/1.1" 200 -
+2022-11-28 19:52:41,460 [ERROR] Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\run.py", line 43, in search_page
+    posts_by_query = add_tags_to_list_posts(search_for_posts(query))
+  File "C:\Users\tvkus\PycharmProjects\pythonProject\coursework3\utils.py", line 61, in search_for_posts
+    if query.lower() in post["content"].lower():
+AttributeError: 'NoneType' object has no attribute 'lower'
+2022-11-28 19:52:41,463 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:41] "GET /search HTTP/1.1" 200 -
+2022-11-28 19:52:43,492 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:43] "GET /s HTTP/1.1" 200 -
+2022-11-28 19:52:45,433 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:45] "GET / HTTP/1.1" 200 -
+2022-11-28 19:52:45,876 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:45] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:52:45,905 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:45] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:52:45,983 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:45] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:52:50,624 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:50] "GET /search?s=кот HTTP/1.1" 200 -
+2022-11-28 19:52:50,714 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:50] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:52:50,744 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:50] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:52:50,790 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:50] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:52:53,486 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:53] "GET /search?s=про HTTP/1.1" 200 -
+2022-11-28 19:52:53,566 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:53] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:52:53,588 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:53] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:52:53,596 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:53] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:52:56,383 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:56] "GET /search?s=утр HTTP/1.1" 200 -
+2022-11-28 19:52:56,463 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:56] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:52:56,483 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:56] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:52:56,521 [INFO] 127.0.0.1 - - [28/Nov/2022 19:52:56] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:53:00,002 [INFO] 127.0.0.1 - - [28/Nov/2022 19:53:00] "GET /search?s=квадр HTTP/1.1" 200 -
+2022-11-28 19:53:00,119 [INFO] 127.0.0.1 - - [28/Nov/2022 19:53:00] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:53:00,176 [INFO] 127.0.0.1 - - [28/Nov/2022 19:53:00] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:53:00,197 [INFO] 127.0.0.1 - - [28/Nov/2022 19:53:00] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:54:47,414 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 19:54:47,415 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 19:54:51,714 [INFO] 127.0.0.1 - - [28/Nov/2022 19:54:51] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:54:51,796 [INFO] 127.0.0.1 - - [28/Nov/2022 19:54:51] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:54:51,854 [INFO] 127.0.0.1 - - [28/Nov/2022 19:54:51] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:55:20,281 [INFO] 127.0.0.1 - - [28/Nov/2022 19:55:20] "GET /templates/user-feed.html-feed.html HTTP/1.1" 200 -
+2022-11-28 19:55:23,566 [INFO] 127.0.0.1 - - [28/Nov/2022 19:55:23] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:55:23,606 [INFO] 127.0.0.1 - - [28/Nov/2022 19:55:23] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:55:23,655 [INFO] 127.0.0.1 - - [28/Nov/2022 19:55:23] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:55:25,989 [INFO] 127.0.0.1 - - [28/Nov/2022 19:55:25] "GET / HTTP/1.1" 200 -
+2022-11-28 19:55:26,093 [INFO] 127.0.0.1 - - [28/Nov/2022 19:55:26] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:55:26,098 [INFO] 127.0.0.1 - - [28/Nov/2022 19:55:26] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:55:26,222 [INFO] 127.0.0.1 - - [28/Nov/2022 19:55:26] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:55:42,916 [INFO] 127.0.0.1 - - [28/Nov/2022 19:55:42] "GET /posts/2/ HTTP/1.1" 200 -
+2022-11-28 19:55:42,989 [INFO] 127.0.0.1 - - [28/Nov/2022 19:55:42] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:55:43,031 [INFO] 127.0.0.1 - - [28/Nov/2022 19:55:43] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:55:43,066 [INFO] 127.0.0.1 - - [28/Nov/2022 19:55:43] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:56:00,246 [INFO] 127.0.0.1 - - [28/Nov/2022 19:56:00] "GET /search?s=кот HTTP/1.1" 200 -
+2022-11-28 19:56:00,335 [INFO] 127.0.0.1 - - [28/Nov/2022 19:56:00] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:56:00,347 [INFO] 127.0.0.1 - - [28/Nov/2022 19:56:00] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:56:00,387 [INFO] 127.0.0.1 - - [28/Nov/2022 19:56:00] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:56:08,820 [INFO] 127.0.0.1 - - [28/Nov/2022 19:56:08] "GET / HTTP/1.1" 200 -
+2022-11-28 19:56:08,900 [INFO] 127.0.0.1 - - [28/Nov/2022 19:56:08] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:56:08,913 [INFO] 127.0.0.1 - - [28/Nov/2022 19:56:08] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:56:08,947 [INFO] 127.0.0.1 - - [28/Nov/2022 19:56:08] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 19:59:52,548 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 19:59:52,549 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 19:59:53,794 [INFO] 127.0.0.1 - - [28/Nov/2022 19:59:53] "GET / HTTP/1.1" 200 -
+2022-11-28 19:59:54,162 [INFO] 127.0.0.1 - - [28/Nov/2022 19:59:54] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 19:59:54,366 [INFO] 127.0.0.1 - - [28/Nov/2022 19:59:54] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 19:59:54,384 [INFO] 127.0.0.1 - - [28/Nov/2022 19:59:54] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:00:15,915 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:15] "GET /search?s=про HTTP/1.1" 200 -
+2022-11-28 20:00:16,002 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:16] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:00:16,043 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:16] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:00:16,053 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:16] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:00:33,284 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:33] "[32mGET /posts/8 HTTP/1.1[0m" 308 -
+2022-11-28 20:00:33,332 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:33] "GET /posts/8/ HTTP/1.1" 200 -
+2022-11-28 20:00:33,430 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:33] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:00:33,439 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:33] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:00:33,458 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:33] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:00:36,780 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:36] "GET / HTTP/1.1" 200 -
+2022-11-28 20:00:36,841 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:36] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:00:36,851 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:36] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:00:36,986 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:36] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:00:40,087 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:40] "GET /tag/инста HTTP/1.1" 200 -
+2022-11-28 20:00:40,171 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:40] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:00:40,194 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:40] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:00:40,220 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:40] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:00:57,855 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:57] "GET /posts/5/ HTTP/1.1" 200 -
+2022-11-28 20:00:57,940 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:57] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:00:57,972 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:57] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:00:58,010 [INFO] 127.0.0.1 - - [28/Nov/2022 20:00:58] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:03,209 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:03] "GET /tag/любовькживотным HTTP/1.1" 200 -
+2022-11-28 20:01:03,290 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:03] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:03,329 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:03] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:03,335 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:03] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:06,368 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:06] "GET /users/leo HTTP/1.1" 200 -
+2022-11-28 20:01:06,424 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:06] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:06,468 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:06] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:06,487 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:06] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:07,817 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:07] "GET /users/leo HTTP/1.1" 200 -
+2022-11-28 20:01:07,886 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:07] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:07,910 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:07] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:07,919 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:07] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:09,350 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:09] "GET / HTTP/1.1" 200 -
+2022-11-28 20:01:09,410 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:09] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:09,436 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:09] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:09,465 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:09] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:12,625 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:12] "[32mGET /bookmarks/add/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:01:12,648 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:12] "GET / HTTP/1.1" 200 -
+2022-11-28 20:01:12,741 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:12] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:12,750 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:12] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:12,768 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:12] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:15,424 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:15] "[32mGET /bookmarks/add/2 HTTP/1.1[0m" 302 -
+2022-11-28 20:01:15,444 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:15] "GET / HTTP/1.1" 200 -
+2022-11-28 20:01:15,535 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:15] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:15,536 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:15] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:15,565 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:15] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:17,079 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:17] "[32mGET /bookmarks/add/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:01:17,102 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:17] "GET / HTTP/1.1" 200 -
+2022-11-28 20:01:17,194 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:17] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:17,200 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:17] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:17,229 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:17] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:19,418 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:19] "[32mGET /bookmarks/add/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:01:19,436 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:19] "GET / HTTP/1.1" 200 -
+2022-11-28 20:01:19,548 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:19] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:19,571 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:19] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:19,589 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:19] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:22,895 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:22] "[32mGET /bookmarks/add/3 HTTP/1.1[0m" 302 -
+2022-11-28 20:01:22,925 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:22] "GET / HTTP/1.1" 200 -
+2022-11-28 20:01:23,028 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:23] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:23,061 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:23] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:23,067 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:23] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:24,906 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:24] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:01:24,993 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:24] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:25,051 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:25] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:25,092 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:25] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:30,090 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:30] "[32mGET /bookmarks/remove/3 HTTP/1.1[0m" 302 -
+2022-11-28 20:01:30,121 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:30] "GET / HTTP/1.1" 200 -
+2022-11-28 20:01:30,196 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:30] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:30,201 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:30] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:30,234 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:30] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:37,593 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:37] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:01:37,675 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:37] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:37,685 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:37] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:37,720 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:37] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:38,771 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:38] "[32mGET /bookmarks/remove/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:01:38,788 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:38] "GET / HTTP/1.1" 200 -
+2022-11-28 20:01:38,847 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:38] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:38,858 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:38] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:39,019 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:39] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:40,070 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:40] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:01:40,149 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:40] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:40,200 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:40] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:40,216 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:40] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:41,029 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:41] "[32mGET /bookmarks/remove/2 HTTP/1.1[0m" 302 -
+2022-11-28 20:01:41,048 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:41] "GET / HTTP/1.1" 200 -
+2022-11-28 20:01:41,124 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:41] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:41,132 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:41] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:41,171 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:41] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:41,827 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:41] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:01:41,899 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:41] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:41,940 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:41] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:41,944 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:41] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:42,802 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:42] "[32mGET /bookmarks/remove/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:01:42,822 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:42] "GET / HTTP/1.1" 200 -
+2022-11-28 20:01:42,884 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:42] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:42,894 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:42] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:43,032 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:43] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:43,581 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:43] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:01:43,657 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:43] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:43,678 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:43] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:43,700 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:43] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:44,676 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:44] "[32mGET /bookmarks/remove/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:01:44,695 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:44] "GET / HTTP/1.1" 200 -
+2022-11-28 20:01:44,802 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:44] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:01:44,903 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:44] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:01:44,969 [INFO] 127.0.0.1 - - [28/Nov/2022 20:01:44] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:25,344 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 20:03:25,345 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 20:03:25,861 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:25] "GET / HTTP/1.1" 200 -
+2022-11-28 20:03:26,509 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:26] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:26,540 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:26] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:26,661 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:26] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:28,644 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:28] "[32mGET /bookmarks/add/5 HTTP/1.1[0m" 302 -
+2022-11-28 20:03:28,686 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:28] "GET / HTTP/1.1" 200 -
+2022-11-28 20:03:28,806 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:28] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:28,818 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:28] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:28,840 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:28] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:30,723 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:30] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:03:30,808 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:30] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:30,845 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:30] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:30,848 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:30] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:32,502 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:32] "[32mGET /bookmarks/remove/5 HTTP/1.1[0m" 302 -
+2022-11-28 20:03:32,548 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:32] "GET / HTTP/1.1" 200 -
+2022-11-28 20:03:32,732 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:32] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:32,817 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:32] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:32,927 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:32] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:34,750 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:34] "[32mGET /bookmarks/add/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:03:34,771 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:34] "GET / HTTP/1.1" 200 -
+2022-11-28 20:03:34,854 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:34] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:34,860 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:34] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:34,931 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:34] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:36,619 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:36] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:03:36,689 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:36] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:36,718 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:36] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:36,733 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:36] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:40,051 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:40] "[32mGET /bookmarks/remove/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:03:40,070 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:40] "GET / HTTP/1.1" 200 -
+2022-11-28 20:03:40,151 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:40] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:40,156 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:40] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:40,302 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:40] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:45,771 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:45] "[32mGET /bookmarks/add/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:03:45,788 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:45] "GET / HTTP/1.1" 200 -
+2022-11-28 20:03:45,868 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:45] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:45,871 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:45] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:45,913 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:45] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:47,397 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:47] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:03:47,505 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:47] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:47,520 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:47] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:47,562 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:47] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:48,908 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:48] "[32mGET /bookmarks/remove/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:03:48,930 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:48] "GET / HTTP/1.1" 200 -
+2022-11-28 20:03:49,019 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:49] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:49,045 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:49] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:49,077 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:49] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:51,079 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:51] "[32mGET /bookmarks/add/2 HTTP/1.1[0m" 302 -
+2022-11-28 20:03:51,099 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:51] "GET / HTTP/1.1" 200 -
+2022-11-28 20:03:51,170 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:51] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:51,177 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:51] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:51,210 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:51] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:52,713 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:52] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:03:52,795 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:52] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:52,846 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:52] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:52,871 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:52] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:54,165 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:54] "[32mGET /bookmarks/remove/2 HTTP/1.1[0m" 302 -
+2022-11-28 20:03:54,182 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:54] "GET / HTTP/1.1" 200 -
+2022-11-28 20:03:54,255 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:54] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:03:54,262 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:54] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:03:54,283 [INFO] 127.0.0.1 - - [28/Nov/2022 20:03:54] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:36,822 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 20:05:36,822 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 20:05:37,394 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:37] "GET / HTTP/1.1" 200 -
+2022-11-28 20:05:37,637 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:37] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:05:37,720 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:37] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:37,802 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:37] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:40,865 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:40] "[32mGET /bookmarks/add/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:05:40,887 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:40] "GET / HTTP/1.1" 200 -
+2022-11-28 20:05:40,977 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:40] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:05:40,995 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:40] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:41,027 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:41] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:42,804 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:42] "GET /users/leo HTTP/1.1" 200 -
+2022-11-28 20:05:42,911 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:42] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:05:42,962 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:42] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:42,969 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:42] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:44,937 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:44] "[32mGET /bookmarks/add/5 HTTP/1.1[0m" 302 -
+2022-11-28 20:05:44,961 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:44] "GET / HTTP/1.1" 200 -
+2022-11-28 20:05:45,064 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:45] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:05:45,072 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:45] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:45,238 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:45] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:47,354 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:47] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:05:47,451 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:47] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:05:47,511 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:47] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:47,543 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:47] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:50,274 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:50] "GET / HTTP/1.1" 200 -
+2022-11-28 20:05:50,472 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:50] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:05:50,625 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:50] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:50,745 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:50] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:53,320 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:53] "GET /posts/1/ HTTP/1.1" 200 -
+2022-11-28 20:05:53,383 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:53] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:05:53,424 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:53] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:53,455 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:53] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:55,661 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:55] "[32mGET /bookmarks/add/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:05:55,680 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:55] "GET / HTTP/1.1" 200 -
+2022-11-28 20:05:55,779 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:55] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:05:55,897 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:55] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:55,969 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:55] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:57,433 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:57] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:05:57,515 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:57] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:05:57,576 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:57] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:05:57,645 [INFO] 127.0.0.1 - - [28/Nov/2022 20:05:57] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:00,963 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:00] "GET / HTTP/1.1" 200 -
+2022-11-28 20:06:01,032 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:01] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:01,049 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:01] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:01,086 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:01] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:05,181 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:05] "GET /search?s=кот HTTP/1.1" 200 -
+2022-11-28 20:06:05,280 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:05] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:05,325 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:05] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:05,334 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:05] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:12,351 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:12] "GET /search?s=кот HTTP/1.1" 200 -
+2022-11-28 20:06:12,423 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:12] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:12,435 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:12] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:12,458 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:12] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:15,150 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:15] "[32mGET /bookmarks/add/2 HTTP/1.1[0m" 302 -
+2022-11-28 20:06:15,168 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:15] "GET / HTTP/1.1" 200 -
+2022-11-28 20:06:15,293 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:15] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:15,330 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:15] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:15,378 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:15] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:16,551 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:16] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:06:16,627 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:16] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:16,691 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:16] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:16,707 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:16] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:20,178 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:20] "[32mGET /bookmarks/remove/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:06:20,199 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:20] "GET / HTTP/1.1" 200 -
+2022-11-28 20:06:20,284 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:20] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:20,303 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:20] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:20,310 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:20] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:23,791 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:23] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:06:23,875 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:23] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:23,934 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:23] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:23,959 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:23] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:25,054 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:25] "[32mGET /bookmarks/remove/5 HTTP/1.1[0m" 302 -
+2022-11-28 20:06:25,071 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:25] "GET / HTTP/1.1" 200 -
+2022-11-28 20:06:25,157 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:25] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:25,171 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:25] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:25,198 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:25] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:26,222 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:26] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:06:26,309 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:26] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:26,370 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:26] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:26,377 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:26] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:27,258 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:27] "[32mGET /bookmarks/remove/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:06:27,274 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:27] "GET / HTTP/1.1" 200 -
+2022-11-28 20:06:27,360 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:27] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:27,376 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:27] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:27,401 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:27] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:28,515 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:28] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:06:28,587 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:28] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:28,665 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:28] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:28,676 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:28] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:29,623 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:29] "[32mGET /bookmarks/remove/2 HTTP/1.1[0m" 302 -
+2022-11-28 20:06:29,640 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:29] "GET / HTTP/1.1" 200 -
+2022-11-28 20:06:29,721 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:29] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:29,739 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:29] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:29,742 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:29] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:30,608 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:30] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:06:30,677 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:30] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:32,044 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:32] "GET / HTTP/1.1" 200 -
+2022-11-28 20:06:32,112 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:32] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:06:32,120 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:32] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:06:32,147 [INFO] 127.0.0.1 - - [28/Nov/2022 20:06:32] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:34:58,663 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-11-28 20:34:58,665 [INFO] [33mPress CTRL+C to quit[0m
+2022-11-28 20:35:09,802 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:09] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:35:09,930 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:09] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:35:09,937 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:09] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:35:22,722 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:22] "GET /search?s=про HTTP/1.1" 200 -
+2022-11-28 20:35:22,838 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:22] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:35:22,852 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:22] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:35:22,902 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:22] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:35:31,332 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:31] "GET /search?s=кот HTTP/1.1" 200 -
+2022-11-28 20:35:31,406 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:31] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:35:31,425 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:31] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:35:31,470 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:31] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:35:37,376 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:37] "GET /users/johnny HTTP/1.1" 200 -
+2022-11-28 20:35:37,435 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:37] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:35:37,461 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:37] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:35:37,470 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:37] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:35:42,594 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:42] "GET / HTTP/1.1" 200 -
+2022-11-28 20:35:42,652 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:42] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:35:42,680 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:42] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:35:42,783 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:42] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:35:48,640 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:48] "GET /posts/1/ HTTP/1.1" 200 -
+2022-11-28 20:35:48,691 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:48] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:35:48,726 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:48] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:35:48,731 [INFO] 127.0.0.1 - - [28/Nov/2022 20:35:48] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:10,528 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:10] "GET /tag/инста HTTP/1.1" 200 -
+2022-11-28 20:36:10,610 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:10] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:10,638 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:10] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:10,671 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:10] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:19,171 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:19] "GET /posts/5/ HTTP/1.1" 200 -
+2022-11-28 20:36:19,246 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:19] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:19,260 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:19] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:19,299 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:19] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:21,643 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:21] "GET /posts/5/ HTTP/1.1" 200 -
+2022-11-28 20:36:21,706 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:21] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:21,737 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:21] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:21,739 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:21] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:24,851 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:24] "GET /tag/котики HTTP/1.1" 200 -
+2022-11-28 20:36:24,921 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:24] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:24,945 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:24] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:24,961 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:24] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:28,970 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:28] "GET / HTTP/1.1" 200 -
+2022-11-28 20:36:29,028 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:29] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:29,131 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:29] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:29,187 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:29] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:36,626 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:36] "[32mGET /bookmarks/add/2 HTTP/1.1[0m" 302 -
+2022-11-28 20:36:36,644 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:36] "GET / HTTP/1.1" 200 -
+2022-11-28 20:36:36,747 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:36] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:36,755 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:36] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:36,789 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:36] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:39,131 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:39] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:36:39,179 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:39] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:39,215 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:39] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:39,232 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:39] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:43,446 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:43] "[32mGET /bookmarks/remove/2 HTTP/1.1[0m" 302 -
+2022-11-28 20:36:43,466 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:43] "GET / HTTP/1.1" 200 -
+2022-11-28 20:36:43,544 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:43] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:43,561 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:43] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:43,600 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:43] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:45,694 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:45] "[32mGET /bookmarks/add/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:36:45,714 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:45] "GET / HTTP/1.1" 200 -
+2022-11-28 20:36:45,780 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:45] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:45,803 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:45] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:45,824 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:45] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:47,934 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:47] "[32mGET /bookmarks/add/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:36:47,955 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:47] "GET / HTTP/1.1" 200 -
+2022-11-28 20:36:48,065 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:48] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:48,078 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:48] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:48,102 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:48] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:50,539 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:50] "[32mGET /bookmarks/add/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:36:50,558 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:50] "GET / HTTP/1.1" 200 -
+2022-11-28 20:36:50,630 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:50] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:50,633 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:50] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:50,658 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:50] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:52,282 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:52] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:36:52,368 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:52] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:52,416 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:52] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:52,427 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:52] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:59,159 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:59] "[32mGET /bookmarks/remove/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:36:59,187 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:59] "GET / HTTP/1.1" 200 -
+2022-11-28 20:36:59,270 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:59] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:36:59,306 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:59] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:36:59,453 [INFO] 127.0.0.1 - - [28/Nov/2022 20:36:59] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:37:03,270 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:03] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:37:03,337 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:03] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:37:03,345 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:03] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:37:03,378 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:03] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:37:04,167 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:04] "[32mGET /bookmarks/remove/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:37:04,188 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:04] "GET / HTTP/1.1" 200 -
+2022-11-28 20:37:04,313 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:04] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:37:04,333 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:04] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:37:04,450 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:04] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:37:05,526 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:05] "GET /bookmarks/ HTTP/1.1" 200 -
+2022-11-28 20:37:05,590 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:05] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:37:05,615 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:05] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-11-28 20:37:05,652 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:05] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:37:06,720 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:06] "[32mGET /bookmarks/remove/1 HTTP/1.1[0m" 302 -
+2022-11-28 20:37:06,739 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:06] "GET / HTTP/1.1" 200 -
+2022-11-28 20:37:06,806 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:06] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-11-28 20:37:06,815 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:06] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-11-28 20:37:06,834 [INFO] 127.0.0.1 - - [28/Nov/2022 20:37:06] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
