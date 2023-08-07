@@ -1,16 +1,19 @@
 # Это маленький инстаграм с котами и едой
-	
-  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-  ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-  ![Jinja](https://img.shields.io/badge/jinja-white.svg?style=for-the-badge&logo=jinja&logoColor=black)
-  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-  
-*Здесь можно*:
-* смотреть посты
-* искать посты по ключевому слову
-* читать комментарии
-* смотреть все посты одного автора
-* нажимать на теги
-* использовать закладки
----
-И конечно **любоваться котиками!**
+## Python 3.10, Flask 2.2.2
+
+<img width="550" alt="Снимок экрана 2023-08-07 в 21 06 24" src="https://github.com/tanyayogini/instagram-style-app/assets/109861482/2fa989d6-8277-4c80-814c-8c4f0dd38ee1">
+
+Смотреть работу приложения: https://youtu.be/mH9Y_tqgFZk
+
+## Запуск:
+* Установить зависимости из файла requirements.txt
+* Запустить файл run.py
+
+## В проекте реализованы:
+* Просмотр ленты постов
+* Поиск по ключевому слову
+* Чтение комментариев комментарии
+* Просмотр всех постов одного автора
+* Поиск постов по тегу
+* Добавление постов в закладки
+* Просмотр сохраненных постов
