@@ -2,7 +2,6 @@ import pytest
 from run import app
 
 
-# создаем переменную для ключей, наличие которых будем проверять.
 keys_should_be_posts = {"poster_name", "poster_avatar", "pic", "content", "views_count", "likes_count",
                         "pk"}
 

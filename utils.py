@@ -1,20 +1,17 @@
 import json
 
 
-def load_json(path):
-    """Загружает данные из json-файла, возвращаем в формате списка"""
+def load_json(path: str) -> list:
     with open(path, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
-def get_posts_all():
-    """Возвращает все посты в формате списка"""
+def get_posts_all() -> list:
     posts = load_json("data/posts.json")
     return posts
 
 
-def get_posts_by_user(user_name):
-    """Возвращаем посты по имени пользователя в формате списка"""
+def get_posts_by_user(user_name: str) -> list:
     posts = get_posts_all()
     posts_by_user = []
     user_existed = False
@@ -30,8 +27,7 @@ def get_posts_by_user(user_name):
     return posts_by_user
 
 
-def get_comments_by_post_id(post_id):
-    """Возвращаем комментарии по id поста в формате списка"""
+def get_comments_by_post_id(post_id: int) -> list:
     posts = load_json("data/posts.json")
     comments = load_json("data/comments.json")
     comments_by_post_id = []
@@ -51,8 +47,7 @@ def get_comments_by_post_id(post_id):
     return comments_by_post_id
 
 
-def search_for_posts(query):
-    """Возвращает посты (до 10 штук), содержащие поисковый запрос"""
+def search_for_posts(query: str) -> list:
     posts = get_posts_all()
     posts_by_query = []
     number_posts = 0
@@ -68,8 +63,7 @@ def search_for_posts(query):
     return posts_by_query
 
 
-def get_post_by_pk(pk):
-    """Возвращает пост по pk в формате словаря"""
+def get_post_by_pk(pk: int) -> dict:
     posts = get_posts_all()
 
     for post in posts:
@@ -77,7 +71,7 @@ def get_post_by_pk(pk):
             return post
 
 
-def add_tags_to_post(post):
+def add_tags_to_post(post: dict) -> dict:
     """Получает пост в формате словаря. Для поста в тексте превращает слова, начинающиеся с #
     в ссылку по соответствующему тегу. Возвращает пост в формате словаря"""
     post_words = post["content"].split(" ")
@@ -89,7 +83,7 @@ def add_tags_to_post(post):
     return post
 
 
-def add_tags_to_list_posts(posts):
+def add_tags_to_list_posts(posts: list) -> list:
     """Получает список постов. В каждом посте в тексте превращает слова,
     начинающиеся на # в ссылку по соответствующему тегу. Возвращает список постов"""
     for post in posts:
@@ -98,8 +92,7 @@ def add_tags_to_list_posts(posts):
     return posts
 
 
-def search_post_by_tag(tag_name):
-    """Получает тег (строку), возвращает список постов в этим тегом"""
+def search_post_by_tag(tag_name: str) -> list:
     posts = get_posts_all()
     post_with_tag = []
     for post in posts:
@@ -112,14 +105,12 @@ def search_post_by_tag(tag_name):
     return post_with_tag
 
 
-def get_bookmarks_all():
-    """Загружает все закладки из файла json, возвращает их в формате списка"""
+def get_bookmarks_all() -> list:
     bookmarks_posts = load_json("data/bookmarks.json")
     return bookmarks_posts
 
 
-def add_bookmarks_to_json(post_id):
-    """Получает id поста, добавляет пост в файл с закладками"""
+def add_bookmarks_to_json(post_id: int) -> None:
     bookmarks_posts = get_bookmarks_all()
     posts = get_posts_all()
     for post in posts:
@@ -131,8 +122,7 @@ def add_bookmarks_to_json(post_id):
         json.dump(bookmarks_posts, file)
 
 
-def remove_bookmarks_to_json(post_id):
-    """Получает id поста, удаляет его из файла с закладками"""
+def remove_bookmarks_to_json(post_id: int) -> None:
     bookmarks_posts = get_bookmarks_all()
     posts = get_posts_all()
     for post in posts:

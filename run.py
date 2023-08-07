@@ -13,12 +13,8 @@ app.register_blueprint(api_posts)
 @app.route("/")
 def main_page():
     posts = add_tags_to_list_posts(get_posts_all())
-
-    # для вывода на главной странице количества сохраненных постов, загрузим закладки и передадим
-    # в шаблон их количество
     bookmarks_posts = get_bookmarks_all()
     number_bookmarks = len(bookmarks_posts)
-
     return render_template("index.html", posts=posts, number_bookmarks=number_bookmarks)
 
 
@@ -26,8 +22,6 @@ def main_page():
 @app.get("/posts/<int:post_id>/")
 def single_post_page(post_id):
     post = add_tags_to_post(get_post_by_pk(post_id))
-
-    # загрузим комментарии, определим их количество и все передадим в шаблон
     comments = get_comments_by_post_id(post_id)
     number_comments = len(comments)
     return render_template("post.html", **post, comments=comments, number_comments=number_comments)
@@ -37,9 +31,6 @@ def single_post_page(post_id):
 @app.get("/search")
 def search_page():
     query = request.args.get("s")
-
-    # загрузим посты, добавим ссылки по тегам, определим количество найденных постов и все передадим
-    # в шаблон
     posts_by_query = add_tags_to_list_posts(search_for_posts(query))
     number_posts = len(posts_by_query)
     return render_template("search.html", posts_by_query=posts_by_query, number_posts=number_posts)
